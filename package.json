@@ -1,0 +1,22 @@
+{
+  "name": "web-mech",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "example": "slidev example.md --open",
+    "imported": "slidev pages/imported-slides.md --open",
+    "demo": "slidev component-demo.md --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.11.1",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.26"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.57.0"
+  }
+}
