@@ -33,7 +33,8 @@ transition: slide-up
 ---
 
 <h1 v-motion :initial="{ opacity: 0, x: -50 }" :enter="{ opacity: 1, x: 0, transition: { duration: 600 } }">
-  Introduction: The Motivation
+  Introduction: <br>
+  The Motivation
 </h1>
 
 <v-clicks>
@@ -81,7 +82,7 @@ transition: view-transition
   Paradigm Shift: From HTTP to Light-weight Standards
 </p>
 
-<div class="grid grid-cols-2 gap-10 mt-10">
+<div class="grid grid-cols-2 gap-10 mt-10 relative">
 
 <div v-motion :initial="{ opacity: 0, x: -50 }" :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 400 } }">
 
@@ -91,6 +92,10 @@ transition: view-transition
 <li>Heavy Headers & TCP Handshakes.</li>
 <li>Inefficient for high-frequency sensor streams.</li>
 </ul>
+
+<div class="mt-4 flex justify-center" v-motion :initial="{ opacity: 0, scale: 0.9, y: 30 }" :enter="{ opacity: 1, scale: 1, y: 0, transition: { duration: 700, delay: 800 } }">
+  <img src="https://plus.unsplash.com/premium_photo-1683758342945-e0e47a14a66d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-40 w-auto object-contain" />
+</div>
 
 </div>
 
@@ -103,13 +108,14 @@ transition: view-transition
 <li>Reduces bandwidth & battery usage.</li>
 </ul>
 
+<div class="mt-4 flex justify-center" v-motion :initial="{ opacity: 0, scale: 0.9, y: 30 }" :enter="{ opacity: 1, scale: 1, y: 0, transition: { duration: 700, delay: 800 } }">
+  <img src="/R.jpg" class="h-40 w-auto object-contain" />
 </div>
 
 </div>
 
-<div class="mt-8" v-motion :initial="{ opacity: 0, scale: 0.9, y: 30 }" :enter="{ opacity: 1, scale: 1, y: 0, transition: { duration: 700, delay: 800 } }">
-  <img src="https://mermaid.ink/img/pako:eNpVkMtqwzAQRX9FzKpF_AAfaSF000VL2013ZeSxPBqbyCPjQCHk3ysnLQK6Gt17zhmN5gVzrgQW-Doqg8_G1jA6eW_1k8YII-sKr6y-wP2428J4P-z3YFqjLxhsz_DT2sJocInO6o_P_4QxP8J4f4T59gTz7RmmqznM11eYby4wX89hXl9hvp7DfH0F8_UC5vUVzNclzNclzJc1zOsrWNaM0YFqW8sK1tZog8ZqUCltQWv9WsmK16yQ4BvJtWw4a63RSiulwQoH3jT8Cj3yH3iG_iO8Q_8MH9F_gQ_on-Ej-i_wEf03eI_-B3xG_wM-o_8Bn9H_gM_of8Bn9D_gM_of8Bn9D_iM_gd8Rv8DPqP_AZ_R_4DP6H_AZ_Q_4DP6H_AZ/?" class="h-40 mx-auto" />
 </div>
+
 
 ---
 layout: two-cols
@@ -240,8 +246,8 @@ layout: center
 class: text-center
 transition: fade
 ---
-<h1 v-motion :initial="{ opacity: 0, scale: 0.5 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 800, type: 'spring', stiffness: 100 } }"> Thank You </h1>
 
-<p v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 300 } }"> Questions? </p>
+<div class="text-[100px]" style="color: var(--slidev-theme-primary)" v-motion :initial="{ opacity: 0, scale: 0.5 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 1500, type: 'spring', stiffness: 20 } }"> Thank You </div> 
+
 
 <div class="mt-10 text-sm text-gray-400" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 500, delay: 600 } }"> Hu Zeliang / Dept. of Mechanical Engineering </div>
