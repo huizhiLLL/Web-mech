@@ -40,23 +40,24 @@ transition: slide-up
 <v-clicks>
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }">
-<h3>🏭 Physical Constraints</h3>
-<p>Monitoring is driven by <strong>hazardous environments</strong>, remote locations (offshore/mining), and adverse weather.</p>
+<h3> Physical Limits</h3>
+<p>Monitoring is driven by <strong>dangerous environments</strong>, remote locations (offshore/mining), harsh weather.</p>
 </div>
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }">
-<h3>🚫 Legacy SCADA Limitations</h3>
+<h4> Legacy SCADA Limitations ❌️</h4>
 <ul>
 <li><strong>Platform Dependent:</strong> Locked to Windows.</li>
-<li><strong>High Cost:</strong> Prohibitive maintenance & travel.</li>
+<li><strong>High Cost:</strong> Expensive maintenance & travel.</li>
 <li><strong>Rigid:</strong> Complex local installation.</li>
 </ul>
 </div>
 
 <div v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { duration: 500 } }">
-<h3>✅ B/S Architecture Solution</h3>
+<br>
+<h4> B/S Architecture Solution ✅️</h4>
 <ul>
-<li><strong>Ubiquity:</strong> Accessible via Smartphones/Tablets.</li>
+<li><strong>Available everywhere:</strong> Accessible via Smartphones/Tablets.</li>
 <li><strong>Zero-Install:</strong> Browser-based monitoring.</li>
 </ul>
 </div>
@@ -79,7 +80,7 @@ transition: view-transition
 </h1>
 
 <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 500, delay: 200 } }">
-  Paradigm Shift: From HTTP to Light-weight Standards
+  Big Change: From HTTP to Light-weight Standards
 </p>
 
 <div class="grid grid-cols-2 gap-10 mt-10 relative">
@@ -127,7 +128,7 @@ transition: slide-up
 </h1>
 
 <p>
-  Handling Heterogeneous Data Streams
+  Handling Mixed Data Streams
 </p>
 
 <v-clicks>
@@ -136,11 +137,11 @@ transition: slide-up
 <h3>⚡ Node.js (Event-Driven)</h3>
 <ul>
 <li><strong>Non-blocking I/O:</strong> Solves "C10k problem".</li>
-<li>Ingests diverse sources (LoRaWAN, API, CSV).</li>
+<li>Collects diverse sources (LoRaWAN, API, CSV).</li>
 <li>Proven in agricultural DSS.</li>
 </ul>
 </div>
-
+<br>
 <div v-once v-motion :initial="{ opacity: 0, x: -30 }" :enter="{ opacity: 1, x: 0, transition: { duration: 500 } }">
 <h3>💾 TSDB (Data Management)</h3>
 <ul>
@@ -180,11 +181,11 @@ transition: fade
 
 <div class="flex justify-center items-center h-80 gap-4">
 
-<div class="w-1/3 bg-gray-100 p-4 rounded text-center opacity-50" v-motion :initial="{ opacity: 0, x: -100, scale: 0.8 }" :enter="{ opacity: 0.5, x: 0, scale: 1, transition: { duration: 600, delay: 400 } }"> <h3>Legacy 2D</h3> <div class="text-6xl">📉</div> <p>Numerical Dashboards</p> <p class="text-xs">Lacks spatial context & leads to ambiguity.</p> </div>
+<div class="w-1/3 bg-gray-100 p-4 rounded text-center opacity-50" v-motion :initial="{ opacity: 0, x: -100, scale: 0.8 }" :enter="{ opacity: 0.5, x: 0, scale: 1, transition: { duration: 600, delay: 400 } }"> <h3>Legacy 2D</h3> <div class="text-6xl">📉</div> <p>Numerical Dashboards</p> <p class="text-xs">Lacks spatial context & leads to confusion.</p> </div>
 
 <div class="text-4xl" v-motion :initial="{ opacity: 0, scale: 0 }" :enter="{ opacity: 1, scale: 1, transition: { duration: 500, delay: 700, type: 'spring' } }">➡️</div>
 
-<div class="w-1/2 bg-blue-100 p-4 rounded text-center border-2 border-blue-500" v-motion :initial="{ opacity: 0, x: 100, scale: 0.8, rotate: -10 }" :enter="{ opacity: 1, x: 0, scale: 1, rotate: 0, transition: { duration: 700, delay: 800, type: 'spring', stiffness: 100 } }"> <h3>3D Digital Twins</h3> <div class="text-6xl">🏗️</div> <p><strong>Three.js / Model Viewer / Unity</strong></p> <ul class="text-left text-sm mt-2"> <li><strong>Google Model Viewer:</strong> Lightweight components.</li> <li><strong>Dynamic Adaptation:</strong> Vue.js + Unity WebGL.</li> <li><strong>Result:</strong> Reduced ambiguity in spare parts ID.</li> </ul> </div>
+<div class="w-1/2 bg-blue-100 p-4 rounded text-center border-2 border-blue-500" v-motion :initial="{ opacity: 0, x: 100, scale: 0.8, rotate: -10 }" :enter="{ opacity: 1, x: 0, scale: 1, rotate: 0, transition: { duration: 700, delay: 800, type: 'spring', stiffness: 100 } }"> <h3>3D Digital Twins</h3> <div class="text-6xl">🏗️</div> <p><strong>Three.js / Model Viewer / Unity</strong></p> <ul class="text-left text-sm mt-2"> <li><strong>Google Model Viewer:</strong> Lightweight components.</li> <li><strong>Dynamic Adaptation:</strong> Vue.js + Unity WebGL.</li> <li><strong>Result:</strong> Reduced confusion in spare parts ID.</li> </ul> </div>
 
 </div>
 
@@ -214,7 +215,7 @@ class: bg-black text-white
 
 <p><strong>ML-based Intrusion Detection</strong></p>
 
-<ul> <li><strong>Problem:</strong> 99.7% of brokers are unencrypted.</li> <li><strong>Solution:</strong> Use ML (e.g., J48, k-NN) at the Edge to detect XSS/SQL anomalies.</li> </ul>
+<ul> <li><strong>Problem:</strong> 99.7% of brokers are unencrypted.</li> <li><strong>Solution:</strong> Use ML (e.g., J48, k-NN) at the Edge to detect XSS/SQL errors.</li> </ul>
 
 </div>
 
@@ -225,7 +226,7 @@ transition: slide-left
 ---
 <h1 v-motion :initial="{ opacity: 0, y: -30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"> Conclusion </h1>
 
-<p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 500, delay: 200 } }"> Synthesizing the Technical Layers </p>
+<p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { duration: 500, delay: 200 } }"> Summarizing the Technical Layers </p>
 
 <div class="mt-8">
 
@@ -235,11 +236,11 @@ transition: slide-left
 
 <li v-motion :initial="{ opacity: 0, x: -30 }" :enter="{ opacity: 1, x: 0, transition: { duration: 500, delay: 800 } }"> <strong>Visualization:</strong> <strong>Web Components</strong> & <strong>Unity</strong> enable immersive Digital Twins. </li>
 
-<li v-motion :initial="{ opacity: 0, x: -30 }" :enter="{ opacity: 1, x: 0, transition: { duration: 500, delay: 1000 } }"> <strong>Security:</strong> Must mitigate <strong>Cross-Protocol Injection</strong> via ML-IDS. </li> </ol>
+<li v-motion :initial="{ opacity: 0, x: -30 }" :enter="{ opacity: 1, x: 0, transition: { duration: 500, delay: 1000 } }"> <strong>Security:</strong> Must reduce <strong>Cross-Protocol Injection</strong> via ML-IDS. </li> </ol>
 
 </div>
 
-<div class="mt-12 p-4 bg-blue-50 border-l-4 border-blue-500" v-motion :initial="{ opacity: 0, y: 30, scale: 0.95 }" :enter="{ opacity: 1, y: 0, scale: 1, transition: { duration: 600, delay: 1200, type: 'spring' } }"> <p class="font-bold">Future Direction:</p> Integrating robust <strong>Cybersecurity measures</strong> and <strong>Edge Computing</strong> for resilient manufacturing. </div>
+<div class="mt-12 p-4 bg-blue-50 border-l-4 border-blue-500" v-motion :initial="{ opacity: 0, y: 30, scale: 0.95 }" :enter="{ opacity: 1, y: 0, scale: 1, transition: { duration: 600, delay: 1200, type: 'spring' } }"> <p class="font-bold">Future Direction:</p> Integrating robust <strong>Cybersecurity measures</strong> and <strong>Edge Computing</strong> for reliable manufacturing. </div>
 
 ---
 layout: center
